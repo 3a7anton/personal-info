@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+  background: linear-gradient(to bottom, #002147, #0099ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  text-align: center;
+  background: linear-gradient(to bottom, #002147, #0099ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.glass-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  animation: outline-rotate 5s linear infinite alternate;
+}
+
+@keyframes outline-rotate {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.3),
+                0 0 80px rgba(255, 255, 255, 0.3),
+                0 0 160px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+                0 0 40px rgba(255, 255, 255, 0.7),
+                0 0 80px rgba(255, 255, 255, 0.7),
+                0 0 160px rgba(255, 255, 255, 0.7),
+                0 0 320px rgba(255, 255, 255, 0.7);
+  }
+}
+
+.glass-card input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  animation: text-blink 1s ease infinite alternate;
+}
+
+@keyframes text-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc00; /* Change this color to the desired button color */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff9900; /* Change this color to the desired hover button color */
+}
+
+button {
+  animation: text-blink 1s ease infinite alternate;
+}
+
+@keyframes text-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
